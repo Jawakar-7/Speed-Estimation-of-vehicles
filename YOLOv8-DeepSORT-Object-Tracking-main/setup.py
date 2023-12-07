@@ -8,8 +8,7 @@ from setuptools import find_packages, setup
 
 # Settings
 FILE = Path(__file__).resolve()
-ROOT = FILE.parent  # root directory
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+ROOT = FILE.parent  # root director
 REQUIREMENTS = [f'{x.name}{x.specifier}' for x in pkg.parse_requirements((ROOT / 'requirements.txt').read_text())]
 
 
